@@ -3,7 +3,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
         console.log("📥 Background nhận lệnh quét:", request.text.substring(0, 30));
         console.log("🚀 Đang bắn data lên Server...");
 
-        fetch("http://127.0.0.1:5000/api/scan", {
+        fetch("https://api-detgamtheuhoa.onrender.com/api/scan", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ 
