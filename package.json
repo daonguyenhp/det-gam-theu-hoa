@@ -12,5 +12,9 @@
     "dotenv": "^16.6.1",
     "express": "^4.19.2",
     "groq-sdk": "^0.37.0"
+  },
+  "scripts": {
+    "start": "node src/server.js", 
+    "dev": "nodemon src/server.js"
   }
 }
