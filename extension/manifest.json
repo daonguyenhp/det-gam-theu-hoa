@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Dệt Gấm Thêu Hoa",
+  "version": "1.0",
+  "description": "Trăng đêm nay đẹp nhỉ?",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "http://localhost:5000/*",
+    "http://127.0.0.1:5000/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Mở Dệt Gấm Thêu Hoa"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ]
+}

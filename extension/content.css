@@ -1,0 +1,39 @@
+/* Class này được add vào thẻ <p> bằng JS ở trên */
+.det-gam-highlight {
+    border-bottom: 2px dashed #00b894; /* Gạch chân đứt nét */
+    cursor: help; /* Con trỏ chuột hình dấu hỏi */
+    transition: background-color 0.3s ease;
+}
+
+.det-gam-highlight:hover {
+    background-color: rgba(0, 184, 148, 0.15); /* Nền xanh nhạt khi hover */
+}
+
+/* (Nâng cao) Tùy chỉnh Tooltip mặc định của trình duyệt */
+/* Thực ra trình duyệt sẽ tự hiện cái 'title', nhưng mình làm đẹp thêm ở đây nếu muốn */
+
+/* Giao diện cho cái bảng thông báo nổi */
+.det-gam-tooltip {
+    display: none; /* Mặc định ẩn đi */
+    position: absolute;
+    z-index: 999999; /* Đảm bảo luôn nằm trên cùng, không bị web khác đè */
+    background: #ffffff;
+    border-left: 4px solid #00b894; /* Viền xanh cho thanh lịch */
+    border-radius: 8px;
+    padding: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    max-width: 300px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #2d3436;
+    pointer-events: none; /* Xuyên chuột, không cản trở thao tác lướt web */
+}
+
+/* Tô màu riêng cho chữ Gợi ý */
+.det-gam-tooltip-title {
+    font-weight: bold;
+    color: #e17055;
+    margin-bottom: 5px;
+    display: block;
+}
